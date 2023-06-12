@@ -1,8 +1,6 @@
 import unittest
-
 import websocket
-
-from settings import settings
+from tests.config.settings import settings
 from tests.utils.decorator import Decorator
 
 
