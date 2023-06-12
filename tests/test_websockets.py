@@ -5,7 +5,14 @@ from tests.utils.decorator import Decorator
 
 
 class WebSocketTest(unittest.TestCase):
+    """
+    Tests that a Websocket connection to the domain works as expected
+    """
+
     def test_websocket_connection(self):
+        """
+        Test a WSS connection to the domain
+        """
         url = Decorator.decorate_wss(settings.DOMAIN)
         # Connect to the WebSocket URL
         ws = websocket.WebSocket()
